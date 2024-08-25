@@ -13,7 +13,13 @@ body {
 }
 
 main {
-    margin-left: 600px;
+    margin-left: 25vw;
+    background-color: black;
+}
+
+#homepage-img-container {
+    width: 75vw;
+    height: 100vh;
 }
 
 #homepage-img {
@@ -23,6 +29,7 @@ main {
 }
 
 #flexbox-header {
+    width: 25vw;
     height: 100vh;
     display: inline-flex;
     flex-direction: column;
