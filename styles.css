@@ -89,14 +89,6 @@ p {
     height: 50vh;
 }
 
-.left {
-    object-position: right;
-}
-
-.right {
-    object-position: left;
-}
-
 #member-grid-flex-container {
     display: flex;
     justify-content: center;
