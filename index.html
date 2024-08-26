@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
         <title>Temporay name for my product landing page</title>
     </head>
     <body>
@@ -15,10 +16,13 @@
                     <div id="flexbox-header">
                         <img src="https://i.ibb.co/Vg9t76g/file-1.png" alt="file-1" id="kol-logo">
                         <nav id="nav-bar">
-                            <a class="nav-link" href="">About</a>
-                            <a class="nav-link" href="">Members</a>
-                            <a class="nav-link" href="">Merchandise</a>
+                            <a class="nav-link" href="#homepage-img-container">Home</a>
+                            <a class="nav-link" href="#member-grid">Members</a>
+                            <!-- Have a 2x2 cube that has each member's face that is clickable and takes you to information about the members.-->
+                            <a class="nav-link" href="">Store</a>
+                            <!--Can have 3 subsections for their albums, clothing, and lightstick/etc merchandise-->
                             <a class="nav-link" href="">Videos</a>
+                            <!-- have preview links to all their videos and links that send you to their youtube video-->
                         </nav>                         
                     </div>
                 </header>
@@ -27,6 +31,16 @@
             <div id="homepage-img-container">
                 <img src="https://dbkpop.com/wp-content/uploads/2023/05/kiss_of_life_members_born_to_be_xx.jpg" alt="member-picture" id="homepage-img">
             </div>
+            <!--maybe nest inside a flex object-->
+            <div id="member-grid-flex-container">
+                <div id="member-grid">
+                    <a href=""><img class="member-img left" src="https://preview.redd.it/231025-kiss-of-life-2nd-mini-album-born-to-be-xx-natty-v0-q4xt3m6i16wb1.jpg?width=640&crop=smart&auto=webp&s=d820e147a8eb3c5b12370a1960814962f6455aa2"  alt="natty-profile"></a>
+                    <a href=""><img class="member-img right" src="https://i.redd.it/231024-kiss-of-life-2nd-mini-album-born-to-be-xx-julie-v0-rt3e86aci0wb1.jpg?width=2000&format=pjpg&auto=webp&s=a14ca25efb51eb5c3afa402027f3633092cd9cd1" alt="julie-profile"></a>
+                    <a href=""><img class="member-img left" src="https://i.redd.it/kiss-of-life-the-2nd-mini-album-born-to-be-xx-concept-photo-v0-hsh71e8w06wb1.jpg?width=2000&format=pjpg&auto=webp&s=1f02ee4a9160f558399eac00a767dbf1ea6f8450" alt="belle-profile"></a>
+                    <a href=""><img class="member-img right" src="https://kpopping.com/documents/a9/2/2000/KISS-OF-LIFE-2nd-Mini-Album-Born-to-be-XX-Concept-Photo-documents-3(2).jpeg?v=12acf" alt="haneul-profile"></a>
+                </div>
+            </div>
+            <p>hello</p>
         </main>
     </body>
 </html>
