@@ -84,6 +84,8 @@ p {
 #member-grid-flex-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #member-grid {
@@ -177,4 +179,12 @@ p {
 
 .img-wrapper:hover > .content.slide-right {
     transform: translateX(0%);
+}
+
+.video-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
