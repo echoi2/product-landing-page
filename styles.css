@@ -1,20 +1,27 @@
-.matemasie-regular {
-    font-family: "Matemasie", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }  
-
 .amatic-sc-regular {
 font-family: "Amatic SC", sans-serif;
 font-weight: 400;
 font-style: normal;
+letter-spacing: 3px;
 }
 
 .amatic-sc-bold {
 font-family: "Amatic SC", sans-serif;
 font-weight: 700;
 font-style: normal;
+letter-spacing: 3px;
 }  
+
+.impact {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 * {
     box-sizing: border-box;
