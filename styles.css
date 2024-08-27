@@ -95,13 +95,86 @@ p {
     padding-top: 10px;
 }
 
+.img-wrapper {
+    /*We need to give the wrapper a relative position since we will be using absolute position to place things on top of that image.*/
+    position: relative;
+    /*When we hover over the image, we want that image to zoom, but it will probably overflow out of the container. We do this to hide it.*/
+    overflow: hidden;
+}
+
+.img-wrapper > .content {
+    position: absolute;
+    /*Sets the top left and right properties to 0 which fills our entire container*/
+    inset: 0;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, .4);
+    display: flex;
+    /*center the text horizontally then vertically*/
+    justify-content: center;
+    align-items: center;
+}
+
 .member-img {
+    display: block;
     object-fit: contain;
     width: 100%;
+    aspect-ratio: 1 / 1;
     height: 50vh;
+    object-position: center;
 }
 
+/*Both of these are targeted because we want the transition timing to be the same on both.*/
+.img-wrapper > .content, .member-img {
+    transition: 300ms ease-in-out;
 }
 
+/*Not hovering*/
+.img-wrapper > .content.fade {
+    opacity: 0;
+}
 
+.img-wrapper:hover > .content.fade {
+    opacity: 1;
+}
+
+.img-wrapper:hover > .member-img.blur {
+    filter: blur(5px);
+}
+
+/*Transfrom the image size by 10% to give a zoom when hovering it.*/
+.img-wrapper:hover > .member-img.zoom {
+    transform: scale(1.1);
+}
+
+.img-wrapper > .content.slide-down {
+    transform: translateY(-100%);
+}
+
+.img-wrapper:hover > .content.slide-down {
+    transform: translateY(0%);
+}
+
+.img-wrapper > .content.slide-up {
+    transform: translateY(100%);
+}
+
+.img-wrapper:hover > .content.slide-up {
+    transform: translateY(0%);
+}
+
+.img-wrapper > .content.slide-left {
+    transform: translateX(-100%);
+}
+
+.img-wrapper:hover > .content.slide-left {
+    transform: translateX(0%);
+}
+
+.img-wrapper > .content.slide-right {
+    transform: translateX(100%);
+}
+
+.img-wrapper:hover > .content.slide-right {
+    transform: translateX(0%);
 }
