@@ -74,7 +74,7 @@ p {
 }
 
 .nav-link {
-    font-size: 30px;
+    font-size: 2.5rem;
 }
 
 #header-img {
@@ -92,7 +92,7 @@ p {
     display: grid;
     width: 48%;
     height: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
     padding-top: 10px;
 }
@@ -187,4 +187,5 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10%;
 }
