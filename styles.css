@@ -225,17 +225,14 @@ p {
 @media (max-width: 1000px) {
     
     main {
-        position: absolute;
         left: 0;
         width: 100%;
-        height: 100%;
         top: 10%;
         overflow-y: scroll;
     }
 
     #homepage-img-container {
         padding: 0;
-        width: 100%;
         height: 100%;
         scroll-margin-top: 270px;
     }
