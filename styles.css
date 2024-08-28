@@ -223,6 +223,27 @@ p {
 }
 
 @media (max-width: 1000px) {
+    
+    main {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        top: 10%;
+        overflow-y: scroll;
+    }
+
+    #homepage-img-container {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        scroll-margin-top: 270px;
+    }
+
+    #homepage-img {
+        object-fit: scale-down;
+    }
+
     #flexbox-header {
         width: 100%;
         height: 10%;
@@ -253,25 +274,11 @@ p {
         width: 100%;
     }
 
-    #homepage-img-container {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        scroll-margin-top: 270px;
-    }
-
     #member-grid-flex-container {
         scroll-margin-top: 80px;
     }
 
     #member-grid {
         width: 100%;
-    }
-
-    main {
-        left: 0;
-        top: 50%;
-        transform: translateY(-6%);
     }
 }
