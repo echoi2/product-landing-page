@@ -44,10 +44,6 @@ main {
     height: 100%;
 }
 
-.emoji-container {
-    display: none;   
-}
-
 #homepage-img-container {
     position: relative;
     width: 100%;
