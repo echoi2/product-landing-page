@@ -133,7 +133,7 @@ p {
     position: absolute;
     /*Sets the top left and right properties to 0 which fills our entire container*/
     inset: 0;
-    font-size: 1.5rem;
+    font-size: 2vh;
     padding: 1rem;
     background: rgba(255, 255, 255, .4);
     display: flex;
