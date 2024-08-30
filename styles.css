@@ -129,24 +129,17 @@ p {
     overflow: hidden;
 }
 
-.img-wrapper > .content-container {
-    position: relative;
-}
-
-.img-wrapper > .content-container > .content {
+.img-wrapper > .content {
     position: absolute;
     /*Sets the top left and right properties to 0 which fills our entire container*/
     inset: 0;
     font-size: 1.5rem;
-    color: black;
     padding: 1rem;
     background: rgba(255, 255, 255, .4);
     display: flex;
     /*center the text horizontally then vertically*/
     justify-content: center;
     align-items: center;
-    height: 100%;
-    overflow: auto;
 }
 
 .member-img {
@@ -164,11 +157,11 @@ p {
 }
 
 /*Not hovering*/
-.img-wrapper > .content-container > .content.fade {
+.img-wrapper > .content.fade {
     opacity: 0;
 }
 
-.img-wrapper:hover > .content-container > .content.fade {
+.img-wrapper:hover > .content.fade {
     opacity: 1;
 }
 
@@ -241,8 +234,6 @@ cleaner picture.*/
 /*The rest of the display sizes within this range will have the same rules.
 The height is the only rule that needed to be changed from before.*/
 @media ((min-width: 1000px) and (max-width: 2000px)){
-    
-
     #member-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 5px;
