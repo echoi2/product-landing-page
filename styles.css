@@ -144,7 +144,7 @@ p {
 
 .member-img {
     display: block;
-    object-fit: contain;
+    object-fit: fill;
     width: 100%;
     aspect-ratio: 1 / 1;
     height: 50vh;
@@ -215,6 +215,40 @@ p {
     margin-top: 10%;
 }
 
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form > fieldset {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+
+label {
+    color: white;
+}
+
+#email {
+    display: block;
+}
+
+
+@media (min-width: 3840px) {
+    #member-grid {
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        gap: 5px;
+        padding: 5px 0;
+    }
+
+    .member-img {
+        object-fit: contain;
+    }
+}
+
 @media (min-width: 2000px) and (max-width: 2800px){
     #member-grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -229,6 +263,10 @@ cleaner picture.*/
     #member-grid {
         height: 100%;
     }
+
+    .member-img {
+        object-fit: contain !important;
+    }
 }
 
 /*The rest of the display sizes within this range will have the same rules.
@@ -241,7 +279,7 @@ The height is the only rule that needed to be changed from before.*/
     }
 
     .member-img {
-        object-fit: contain;
+        object-fit: fill;
     }
 
     #nav-bar {
