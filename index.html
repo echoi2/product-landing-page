@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <style>
             .emoji-container {
-                display: none !important;
+                display: none;
             }
         </style>
         <link rel="stylesheet" href="./styles.css">
@@ -29,8 +29,8 @@
                             <!-- Have a 2x2 cube that has each member's face that is clickable and takes you to information about the members.-->
                             <a class="nav-link amatic-sc-bold" href="#video-container">Videos</a>
                             <!--Can have 3 subsections for their albums, clothing, and lightstick/etc merchandise-->
-                            <a class="nav-link amatic-sc-bold" href="#store-container">Store</a>
-                            <a class="nav-link amatic-sc-bold" href="">Tour</a>
+                            <a class="nav-link amatic-sc-bold" href="#outer-store-container">Store</a>
+                            <a class="nav-link amatic-sc-bold" href="#tour-container">Tour</a>
                             <!-- have preview links to all their videos and links that send you to their youtube video-->
                             <a class="nav-link amatic-sc-bold" href="#form">Sign Up</a>
                         </nav>                         
@@ -55,76 +55,109 @@
                 <div id="member-grid">
                     <div class="img-wrapper">
                         <img class="member-img blur zoom" src="https://preview.redd.it/231025-kiss-of-life-2nd-mini-album-born-to-be-xx-natty-v0-q4xt3m6i16wb1.jpg?width=640&crop=smart&auto=webp&s=d820e147a8eb3c5b12370a1960814962f6455aa2"  alt="natty-profile">
-                        <div class="content fade slide-down courier-prime-regular" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Inventore id repellendus non doloremque deleniti alias odit, voluptatibus nemo? 
-                            Aperiam magni officiis excepturi suscipit enim veniam quam, numquam tempore et error?</div>
+                        <div class="content fade slide-down courier-prime-regular" >
+                            <p>Stage Name: Natty (나띠)</p>
+                            <p>Birth Name: Anatchaya Suputtipong (อานัชญา สุพุทธิพงศ์)</p>
+                            <p>Position(s): Main Dancer, Lead Rapper, Sub-Vocalist</p>
+                            <p>Birthdate: March 29, 2000</p>
+                        </div>
                     </div>
                     <div class="img-wrapper">
                         <img class="member-img blur zoom" src="https://i.redd.it/231024-kiss-of-life-2nd-mini-album-born-to-be-xx-julie-v0-rt3e86aci0wb1.jpg?width=2000&format=pjpg&auto=webp&s=a14ca25efb51eb5c3afa402027f3633092cd9cd1" alt="julie-profile">
-                        <div class="content fade slide-up courier-prime-regular" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Inventore id repellendus non doloremque deleniti alias odit, voluptatibus nemo? 
-                            Aperiam magni officiis excepturi suscipit enim veniam quam, numquam tempore et error?</div>
+                        <div class="content fade slide-up courier-prime-regular" > 
+                            <p>Stage Name: Julie (쥴리)</p>
+                            <p>Birth Name: Julie Han</p>
+                            <p>Korean Name: Han Julie (한줄리)</p>
+                            <p>Position(s): Leader, Main Rapper, Lead Dancer</p>
+                            <p>Birthdate: May 30, 2002</p>
+                        </div>
                     </div>
                     <div class="img-wrapper">
                         <img class="member-img blur zoom" src="https://i.redd.it/kiss-of-life-the-2nd-mini-album-born-to-be-xx-concept-photo-v0-hsh71e8w06wb1.jpg?width=2000&format=pjpg&auto=webp&s=1f02ee4a9160f558399eac00a767dbf1ea6f8450" alt="belle-profile">
-                        <div class="content fade slide-left courier-prime-regular" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Inventore id repellendus non doloremque deleniti alias odit, voluptatibus nemo? 
-                            Aperiam magni officiis excepturi suscipit enim veniam quam, numquam tempore et error?</div>
+                        <div class="content fade slide-left courier-prime-regular" >
+                            <p>Stage Name: Belle (벨)</p>
+                            <p>Anabelle Shim / Shim Hyewon (심혜원)</p>
+                            <p>Position(s): Main Vocalist</p>
+                            <p>Birthdate: March 19, 2004</p>
+                        </div>
                     </div>
                     <div class="img-wrapper">
                         <img class="member-img blur zoom" src="https://kpopping.com/documents/a9/2/2000/KISS-OF-LIFE-2nd-Mini-Album-Born-to-be-XX-Concept-Photo-documents-3(2).jpeg?v=12acf" alt="haneul-profile">
-                        <div class="content fade slide-right courier-prime-regular" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Inventore id repellendus non doloremque deleniti alias odit, voluptatibus nemo? 
-                            Aperiam magni officiis excepturi suscipit enim veniam quam, numquam tempore et error?</div>
+                        <div class="content fade slide-right courier-prime-regular" > 
+                            <p>Stage Name: Haneul (하늘)</p>
+                            <p>Birth Name: Won Haneul (원하늘)</p>
+                            <p>Position(s): Lead Vocalist, Maknae</p>
+                            <p>Birthdate: May 25, 2005</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="video-container" id="video-container">
-                <h2 style="color: white;">Videos</h2>
+                <h2 class="courier-prime-regular" style="color: white;">Videos</h2>
                 <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/IajeQM00yfE?si=RERP6X66Z_6pY8Vh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <div class="store-container" id="store-container">
-                <div class="store-element">
-                    <img src="https://m.media-amazon.com/images/I/71GjU+aCOuL._AC_SL1228_.jpg">
-                    <div class="item-container content fade courier-prime-regular">
-                        <a href="https://a.co/d/je7VpQX">
-                            <p class="item-name">Midas Touch</p>
-                            <p class="item-name">(Jewel Set)</p>
-                        </a>
+            <div id="outer-store-container">
+                <h2 class="courier-prime-regular" style="color: white;">Store</h2>
+                <div class="store-container" id="store-container">
+                    <div class="store-element">
+                        <img src="https://m.media-amazon.com/images/I/71GjU+aCOuL._AC_SL1228_.jpg">
+                        <div class="item-container content fade courier-prime-regular">
+                            <a href="https://a.co/d/je7VpQX">
+                                <p class="item-name">Midas Touch</p>
+                                <p class="item-name">(Jewel Set)</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="store-element">
+                        <img src="https://m.media-amazon.com/images/I/71tQU5tpnxL._AC_SL1455_.jpg">
+                        <div class="item-container content fade courier-prime-regular">
+                            <a href="https://a.co/d/9jst9yp">
+                                <p class="item-name">Midas Touch</p>
+                                <p class="item-name">(Photobook Version)</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="store-element">
+                        <img src="https://m.media-amazon.com/images/I/81KDM+zpcoL._AC_SL1500_.jpg">
+                        <div class="item-container content fade courier-prime-regular">
+                            <a href="https://a.co/d/i1UMVQH">
+                                <p class="item-name">Born to be XX</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="store-element">
+                        <img src="https://m.media-amazon.com/images/I/61Ejgn78awL._AC_SL1500_.jpg">
+                        <div class="item-container content fade courier-prime-regular">
+                            <a href="https://a.co/d/4Zngmtb">
+                                <p class="item-name">Official Light Stick</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="store-element">
-                    <img src="https://m.media-amazon.com/images/I/71tQU5tpnxL._AC_SL1455_.jpg">
-                    <div class="item-container content fade courier-prime-regular">
-                        <a href="https://a.co/d/9jst9yp">
-                            <p class="item-name">Midas Touch</p>
-                            <p class="item-name">(Photobook Version)</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="store-element">
-                    <img src="https://m.media-amazon.com/images/I/81KDM+zpcoL._AC_SL1500_.jpg">
-                    <div class="item-container content fade courier-prime-regular">
-                        <a href="https://a.co/d/i1UMVQH">'
-                            <p class="item-name">Born to be XX</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="store-element">
-                    <img src="https://m.media-amazon.com/images/I/61Ejgn78awL._AC_SL1500_.jpg">
-                    <div class="item-container content fade courier-prime-regular">
-                        <a href="https://a.co/d/4Zngmtb">
-                            <p class="item-name">Official Light Stick</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            </div>>
+            <div id="tour-container">
+                <img class="tour" src="https://i.redd.it/z2drxw9vcxkd1.jpeg">
+            </div>>
             <div class="sign-up-container">
-                <form method="post" action="https://www.freecodecamp.com/email-submit" id="form">
-                    <fieldset>
-                        <label for="email">Email Address<input id="email" name="email" type="email" placeholder="sample@email.com" required /></label>
+                <form method="post" action="https://www.freecodecamp.com/email-submit" class="courier-prime-regular" id="form">
+                    <fieldset class="courier-prime-regular">
+                        <label for="email">Email Address*<input id="email" name="email" type="email" placeholder="sample@email.com" required /></label>
+                        <div><h6 >Subscribe to get more Kiss of Life Updates:</h3></div>
+                        <table style="width: 90%;">
+                            <tr>
+                                <td>
+                                    <label for="kiss-of-life"><input id="kiss-of-life" type="checkbox" value="kiss-of-life">Kiss of Life</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="s2-ent"><input id="s2-ent" type="checkbox" value="s2-ent">S2 Entertainment</label>
+                                </td>
+                            </tr>
+
+                        </table>
+                        <input type="submit" value="SUBSCRIBE" class="courier-prime-regular" id="submit">
                     </fieldset>
-                    <input type="submit" value="SUBMIT" id="submit">
                 </form>
             </div>
         </main>

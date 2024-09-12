@@ -42,7 +42,6 @@ main {
     position: absolute;
     left: 25vw;
     width: calc(100% - 25vw);
-    height: 100%;
 }
 
 #homepage-img-container {
@@ -107,6 +106,7 @@ p {
     height: 100%;
 }
 
+/*CSS for member image grid*/
 #member-grid-flex-container {
     display: flex;
     justify-content: center;
@@ -130,6 +130,7 @@ p {
     overflow: hidden;
 }
 
+/*CSS for hovering elements with transitions*/
 .img-wrapper > .content, .store-element > .item-container {
     position: absolute;
     /*Sets the top left and right properties to 0 which fills our entire container*/
@@ -137,9 +138,21 @@ p {
     font-size: 2vh;
     padding: 1rem;
     display: flex;
+    flex-direction: column;
     /*center the text horizontally then vertically*/
     justify-content: center;
+}
+
+.img-wrapper > .content {
+    align-items: start;
+}
+
+.store-element > .item-container {
     align-items: center;
+}
+
+.img-wrapper > .content > p {
+    color: black;
 }
 
 .img-wrapper > .content {
@@ -216,31 +229,19 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 12%;
 }
 
-#form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#form > fieldset {
-    display: flex;
-    justify-content: start;
-    gap: 10px;
-}
-
-label {
-    color: white;
+/*CSS for store page*/
+#outer-store-container {
+    margin-top: 15%;
+    text-align: center;
 }
 
 .store-container {
-    margin-top: 10%;
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 43%;
+    grid-auto-columns: 46%;
     gap: 1rem;
     overflow-x: auto;
     scrollbar-width: none;
@@ -250,8 +251,7 @@ label {
 }
 
 .store-container:hover {
-    padding-bottom: calc(100vh - 100%);
-    scrollbar-width: auto;
+    scrollbar-width: thin;
 }
 
 .store-element {
@@ -273,7 +273,7 @@ label {
 }
 
 .item-container {
-    background: rgb(56, 30, 120);
+    background: rgb(142, 98, 217);
 }
 
 .item-container > a {
@@ -286,14 +286,86 @@ label {
     text-align: center;
 }
 
-#email {
+/*CSS for tour page*/
+#tour-container{
+    margin-top: 8%;
+    height: 100vh;
+    width: 100%;
+}
+
+.tour {
     display: block;
+    margin: auto;
+    padding: 5%;
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+
+/*CSS for signup page*/
+label {
+    color: white;
 }
 
 .sign-up-container {
-    margin-top: 10%;
+    margin-top: 8%;
+    margin-bottom: 25rem;
 }
 
+#form, #form > fieldset > label {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+#form > fieldset {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    border: none;
+    padding: 0;
+    margin: auto;
+}
+
+#email {
+    display: block;
+    width: 100%;
+    background-color: black;
+    padding: 15px 0 15px 20px;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+#form > fieldset > div {
+    width: 100%;
+    vertical-align: text-top;
+    margin-top: 15px;
+}
+
+#form > fieldset > div > h6 {
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+input[type="checkbox"] {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+#submit {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
 
 @media (min-width: 3840px) {
     #member-grid {
@@ -349,22 +421,39 @@ The height is the only rule that needed to be changed from before.*/
     }
 }
 
+/*CSS for mobile devices*/
 @media (max-width: 1000px) {
 
     main {
         left: 0;
         width: 100%;
         overflow-y: scroll;
-    }
-
-    #member-grid-flex-container {
-        scroll-margin-top: 105px;
-    }
-
-    #member-grid {
         height: 100%;
-        padding: 0;
+    }
+
+    #flexbox-header {
         width: 100%;
+        height: 10%;
+        flex-direction: row;
+        z-index: 999;
+        justify-content: space-between;
+    }
+
+    #header-img {
+        justify-self: start;
+    }
+
+    #nav-bar {
+        grid-template-columns: repeat(3, 100px);
+        align-content: space-evenly;
+        margin: 0;
+        padding: 5px 0 5px 0;
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        justify-self: center;
     }
 
     .emoji-container {
@@ -404,33 +493,35 @@ The height is the only rule that needed to be changed from before.*/
         object-fit: scale-down;
     }
 
-    #flexbox-header {
+    #member-grid-flex-container {
+        scroll-margin-top: 105px;
+    }
+
+    #member-grid {
+        height: 100%;
+        padding: 0;
         width: 100%;
-        height: 10%;
-        flex-direction: row;
-        z-index: 999;
-        justify-content: space-between;
     }
 
-    #header-img {
-        justify-self: start;
-    }
-
-    #nav-bar {
-        grid-template-columns: repeat(3, 100px);
-        align-content: space-evenly;
-        margin: 0;
-        padding: 5px 0 5px 0;
-    }
-
-    .nav-link {
-        font-size: 1.1rem;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        justify-self: center;
+    .video-container {
+        scroll-margin-top: 105px;
     }
 
     #video {
         width: 100%;
+    }
+
+    #outer-store-container {
+        scroll-margin-top: 105px;
+    }
+
+    .store-container {
+        overflow-y: hidden;
+    }
+
+    #tour-container {
+        scroll-margin-top: 105px;
+        height: auto;
     }
 
 }
