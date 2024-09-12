@@ -260,7 +260,6 @@ p {
     grid-template-rows: min-content;
     gap: .5rem;
     border-radius: 1rem;
-    background-color: none;
 }
 
 .store-element > img {
