@@ -15,6 +15,7 @@ letter-spacing: 3px;
 
 .impact {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
 }
 
 .courier-prime-regular {
@@ -129,17 +130,20 @@ p {
     overflow: hidden;
 }
 
-.img-wrapper > .content {
+.img-wrapper > .content, .store-element > .item-container {
     position: absolute;
     /*Sets the top left and right properties to 0 which fills our entire container*/
     inset: 0;
     font-size: 2vh;
     padding: 1rem;
-    background: rgba(255, 255, 255, .4);
     display: flex;
     /*center the text horizontally then vertically*/
     justify-content: center;
     align-items: center;
+}
+
+.img-wrapper > .content {
+    background: rgba(255, 255, 255, .4);
 }
 
 .member-img {
@@ -152,16 +156,16 @@ p {
 }
 
 /*Both of these are targeted because we want the transition timing to be the same on both.*/
-.img-wrapper > .content, .member-img {
+.img-wrapper > .content, .member-img, .store-element > img, .item-container {
     transition: 300ms ease-in-out;
-}
+}   
 
 /*Not hovering*/
-.img-wrapper > .content.fade {
+.img-wrapper > .content.fade, .store-element > .content.fade{
     opacity: 0;
 }
 
-.img-wrapper:hover > .content.fade {
+.img-wrapper:hover > .content.fade, .store-element:hover > .content.fade {
     opacity: 1;
 }
 
@@ -232,8 +236,62 @@ label {
     color: white;
 }
 
+.store-container {
+    margin-top: 10%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 43%;
+    gap: 1rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    overscroll-behavior-inline: contain;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.store-container:hover {
+    padding-bottom: calc(100vh - 100%);
+    scrollbar-width: auto;
+}
+
+.store-element {
+    position: relative;
+    display: grid;
+    grid-template-rows: min-content;
+    gap: .5rem;
+    border-radius: 1rem;
+    background-color: none;
+}
+
+.store-element > img {
+    max-width: 100%;
+    max-height: 100%;
+    inline-size: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: top;
+}
+
+.item-container {
+    background: rgb(56, 30, 120);
+}
+
+.item-container > a {
+    text-decoration: none;
+}
+
+.item-name {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+
 #email {
     display: block;
+}
+
+.sign-up-container {
+    margin-top: 10%;
 }
 
 
