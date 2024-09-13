@@ -376,6 +376,10 @@ input[type="checkbox"] {
     letter-spacing: 3px;
 }
 
+#submit:hover {
+    color: rgb(142, 98, 217);
+}
+
 @media (min-width: 3840px) {
     #member-grid {
         grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
