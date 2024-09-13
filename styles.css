@@ -257,7 +257,6 @@ p {
 .store-element {
     position: relative;
     display: grid;
-    grid-template-rows: min-content;
     gap: .5rem;
     border-radius: 1rem;
 }
