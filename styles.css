@@ -226,10 +226,16 @@ p {
 .video-container {
     display: flex;
     width: 100%;
+    height: 50vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 12%;
+}
+
+iframe {
+    height: 100%;
+    width: 50%;
 }
 
 /*CSS for store page*/
@@ -241,7 +247,7 @@ p {
 .store-container {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 46%;
+    grid-auto-columns: 33%;
     gap: 1rem;
     overflow-x: auto;
     scrollbar-width: none;
@@ -302,9 +308,6 @@ p {
 
 
 /*CSS for signup page*/
-label {
-    color: white;
-}
 
 .sign-up-container {
     margin-top: 8%;
@@ -313,7 +316,14 @@ label {
 
 #form, #form > fieldset > label {
     width: 100%;
-    font-size: 1.5rem;
+}
+
+#form > fieldset > label {
+    font-size: 2rem;
+}
+
+#form > fieldset > label, td > label {
+    color: white;
 }
 
 #form > fieldset {
@@ -334,6 +344,7 @@ label {
     padding: 15px 0 15px 20px;
     border: none;
     border-bottom: 2px solid white;
+    font-size: 1.3rem;
 }
 
 #form > fieldset > div {
@@ -375,11 +386,83 @@ input[type="checkbox"] {
     .member-img {
         object-fit: contain;
     }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .item-name {
+        font-size: 3rem;
+    }
+
+    #form > fieldset > label {
+        font-size: 3rem;
+    }
+
+    #email {
+        font-size: 2rem;
+    }
+
+    #form > fieldset > div > h6 {
+        font-size: 1.7rem;
+    }
+
+    input[type="checkbox"]{
+        width: 20px;
+        height: 20px;
+    }
+
+    td, label{
+        font-size: 1.5rem;
+    }
+
+    #submit {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 2801px) and (max-width: 3840px) {
+    h2 {
+        font-size: 3rem;
+    }
+    .item-name{
+        font-size: 2.5rem;
+    }
+
+    #form > fieldset > label {
+        font-size: 2.5rem;
+    }
+
+    #email {
+        font-size: 1.5rem;
+    }
+
+    #form > fieldset > div > h6 {
+        font-size: 1.2rem;
+    }
+
+    input[type="checkbox"]{
+        width: 18px;
+        height: 18px;
+    }
+
+    td, label{
+        font-size: 1.1rem;
+    }
+
+    #submit {
+        font-size: 2.5rem;
+    }
+    
 }
 
 @media (min-width: 2000px) and (max-width: 2800px){
     #member-grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    h2 {
+        font-size: 2.5rem;
     }
 }
 
@@ -416,6 +499,14 @@ The height is the only rule that needed to be changed from before.*/
 
     .nav-link{
         font-size: 2.5rem;
+    }
+
+    .store-container {
+        grid-auto-columns: 46%;
+    }
+
+    h2 {
+        font-size: 2rem;
     }
 }
 
@@ -503,6 +594,7 @@ The height is the only rule that needed to be changed from before.*/
 
     .video-container {
         scroll-margin-top: 105px;
+        margin-top: 50%;
     }
 
     #video {
@@ -511,15 +603,23 @@ The height is the only rule that needed to be changed from before.*/
 
     #outer-store-container {
         scroll-margin-top: 105px;
+        margin-top: 50%;
     }
 
     .store-container {
         overflow-y: hidden;
+        grid-auto-columns: 65%;
     }
 
     #tour-container {
         scroll-margin-top: 105px;
+        margin-top: 50%;
         height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .sign-up-container {
+        margin-top: 50%;
     }
 
 }
